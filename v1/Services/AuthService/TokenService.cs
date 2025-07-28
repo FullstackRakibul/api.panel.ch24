@@ -39,7 +39,7 @@ namespace v1.Services
                 issuer: _jwtSettings.Issuer,
                 audience: _jwtSettings.Audience,
                 claims: claims,
-                expires: DateTime.UtcNow.AddDays(7),
+                expires: DateTime.UtcNow.AddHours(2),
                 signingCredentials: creds
                 );
 
